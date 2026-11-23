@@ -1,6 +1,10 @@
 #!/usr/bin/env bash
 set -e
 
+npm install -g corepack@latest
+corepack enable
+npm install -g pnpm
+
 cd mcp
 
 corepack enable || true
